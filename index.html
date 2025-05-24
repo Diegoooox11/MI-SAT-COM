@@ -1,138 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<title>Constancia de Situación Fiscal - SAT</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    border: 1px solid #999;
-    background: white;
-    color: #000;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #005b96;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-  }
-  header img {
-    height: 85px;
-    margin-right: 20px;
-  }
-  header h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: #005b96;
-    text-transform: uppercase;
-  }
-  h1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #003366;
-    margin-bottom: 40px;
-    letter-spacing: 3px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #003366;
-  }
-  th, td {
-    border: 1.5px solid #003366;
-    padding: 12px 18px;
-    font-size: 16px;
-    text-align: left;
-    vertical-align: middle;
-  }
-  th {
-    background-color: #005b96;
-    color: white;
-    font-weight: normal;
-    width: 35%;
-  }
-  .bottom-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 45px;
-  }
-  .bottom-section img {
-    height: 110px;
-  }
-  footer {
-    margin-top: 60px;
-    font-size: 12px;
-    text-align: center;
-    color: #555;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
-  }
-  a {
-    color: #005b96;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cédula de Identificación Fiscal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #333;
+            text-align: left;
+        }
+        .header {
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .qr {
+            width: 100px;
+            float: right;
+            margin-top: -70px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_SAT_México.svg" alt="Logo SAT" />
-    <h2>Servicio de Administración Tributaria</h2>
-  </header>
-
-  <h1>CONSTANCIA DE SITUACIÓN FISCAL</h1>
-
-  <table>
-    <tbody>
-      <tr>
-        <th>Nombre o razón social</th>
-        <td>CRISTOPHER ZOE ROJAS MORENO</td>
-      </tr>
-      <tr>
-        <th>RFC</th>
-        <td>ROJC900101XXX</td>
-      </tr>
-      <tr>
-        <th>Tipo de contribuyente</th>
-        <td>Persona Física</td>
-      </tr>
-      <tr>
-        <th>Domicilio fiscal</th>
-        <td>Calle Falsa 123, Ciudad de México, CDMX</td>
-      </tr>
-      <tr>
-        <th>Régimen fiscal</th>
-        <td>Régimen de Incorporación Fiscal</td>
-      </tr>
-      <tr>
-        <th>Fecha de inscripción</th>
-        <td>01/01/2020</td>
-      </tr>
-      <tr>
-        <th>Vigencia</th>
-        <td>Vigente</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="bottom-section">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sello_oficial_del_SAT.svg/120px-Sello_oficial_del_SAT.svg.png" alt="Sello Oficial SAT" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Firma.svg" alt="Firma Oficial" />
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.sat.gob.mx&chs=150x150&choe=UTF-8&chld=L|2" alt="Código QR" />
-  </div>
-
-  <footer>
-    Documento oficial del Servicio de Administración Tributaria (SAT). <br />
-    Visita: <a href="https://www.sat.gob.mx" target="_blank" rel="noopener noreferrer">www.sat.gob.mx</a>
-  </footer>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_SAT_México.svg" alt="SAT Logo" class="logo">
+            <h1>CÉDULA DE IDENTIFICACIÓN FISCAL</h1>
+        </div>
+        <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.sat.gob.mx&chs=150x150&choe=UTF-8&chld=L|2" alt="Código QR" class="qr">
+        <div class="info">
+            <p class="highlight">RFC: ROMC060725FN6</p>
+            <p><strong>Nombre:</strong> CRISTOPHER ZOE ROJAS MORENO</p>
+            <p><strong>CURP:</strong> ROMC060725HVZRRA2</p>
+            <p><strong>Fecha de emisión:</strong> 24 DE DICIEMBRE DE 2024</p>
+            <p><strong>Dirección:</strong> XALAPA, VERACRUZ</p>
+        </div>
+    </div>
 </body>
 </html>
 
