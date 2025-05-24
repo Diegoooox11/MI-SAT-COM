@@ -2,150 +2,104 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Constancia de Situación Fiscal - SAT</title>
+  <title>Constancia de Situación Fiscal</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #ffffff;
-      color: #000;
+      background-color: #f9f9f9;
+      padding: 0;
+      margin: 0;
     }
-
-    .constancia {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 30px;
+    .contenedor {
+      background-color: white;
+      width: 800px;
+      margin: 40px auto;
+      padding: 50px;
       border: 1px solid #ccc;
     }
-
-    .logo-bar {
+    .encabezado {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #0073b1;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
     }
-
-    .logo-bar img {
+    .encabezado img {
       height: 60px;
     }
-
     .titulo {
       text-align: center;
-      font-weight: bold;
       font-size: 18px;
-      margin-bottom: 5px;
+      font-weight: bold;
+      margin-top: 20px;
     }
-
     .subtitulo {
       text-align: center;
-      font-size: 14px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-
-    .seccion {
-      margin-bottom: 20px;
+    .datos, .domicilio {
+      margin-top: 30px;
     }
-
-    .seccion h3 {
-      background-color: #eee;
-      padding: 8px;
-      margin-bottom: 10px;
-      font-size: 15px;
+    .datos p, .domicilio p {
+      margin: 5px 0;
     }
-
-    .datos {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 10px;
-      font-size: 14px;
+    .etiqueta {
+      font-weight: bold;
     }
-
-    .footer {
+    .qr {
       text-align: center;
       margin-top: 30px;
+    }
+    .qr img {
+      height: 130px;
+    }
+    .footer {
+      text-align: center;
       font-size: 12px;
-      color: #555;
-    }
-
-    .barcode {
-      font-family: monospace;
-      text-align: right;
-      font-size: 14px;
-      margin-top: -20px;
-    }
-
-    .qr {
-      float: right;
-      width: 100px;
-    }
-
-    hr {
-      margin: 25px 0;
+      color: gray;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <div class="constancia">
-
-    <div class="logo-bar">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_SAT_México.svg" alt="SAT Logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sello_oficial_del_SAT.svg/120px-Sello_oficial_del_SAT.svg.png" alt="Sello SAT">
+  <div class="contenedor">
+    <div class="encabezado">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/SHCP_Logo.png" alt="Logo Hacienda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/SAT_Mexico_logo.svg/2560px-SAT_Mexico_logo.svg.png" alt="Logo SAT">
     </div>
 
     <div class="titulo">CONSTANCIA DE SITUACIÓN FISCAL</div>
-    <div class="subtitulo">Emitida a través del portal del SAT</div>
+    <div class="subtitulo">XALAPA, VERACRUZ A 24 DE DICIEMBRE DE 2024</div>
 
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.sat.gob.mx&chs=120x120&choe=UTF-8" alt="Código QR" class="qr">
-
-    <div class="barcode">ROMC060725FN6</div>
-
-    <p><strong>Lugar y Fecha de Emisión:</strong> XALAPA, VERACRUZ A 24 DE DICIEMBRE DE 2024</p>
-
-    <hr>
-
-    <div class="seccion">
-      <h3>Datos de Identificación del Contribuyente</h3>
-      <div class="datos">
-        <div><strong>RFC:</strong></div><div>ROMC060725FN6</div>
-        <div><strong>CURP:</strong></div><div>ROMC060725HVZJRR2A2</div>
-        <div><strong>Nombre(s):</strong></div><div>CRISTOPHER ZOE</div>
-        <div><strong>Primer Apellido:</strong></div><div>ROJAS</div>
-        <div><strong>Segundo Apellido:</strong></div><div>MORENO</div>
-        <div><strong>Fecha inicio de operaciones:</strong></div><div>21 DE DICIEMBRE DE 2024</div>
-        <div><strong>Estatus en el padrón:</strong></div><div>ACTIVO</div>
-        <div><strong>Fecha de último cambio de estatus:</strong></div><div>21 DE DICIEMBRE DE 2024</div>
-        <div><strong>Nombre Comercial:</strong></div><div>(vacío)</div>
-      </div>
+    <div class="datos">
+      <p><span class="etiqueta">RFC:</span> ROMC060725FN6</p>
+      <p><span class="etiqueta">CURP:</span> ROMC060725HVZJRA2</p>
+      <p><span class="etiqueta">Nombre(s):</span> CRISTOPHER ZOE</p>
+      <p><span class="etiqueta">Primer Apellido:</span> ROJAS</p>
+      <p><span class="etiqueta">Segundo Apellido:</span> MORENO</p>
+      <p><span class="etiqueta">Fecha de inicio de operaciones:</span> 21 DE DICIEMBRE DE 2024</p>
+      <p><span class="etiqueta">Estatus en el padrón:</span> ACTIVO</p>
+      <p><span class="etiqueta">Fecha de último cambio de estado:</span> 21 DE DICIEMBRE DE 2024</p>
+      <p><span class="etiqueta">Nombre Comercial:</span> —</p>
     </div>
 
-    <div class="seccion">
-      <h3>Datos del domicilio registrado</h3>
-      <div class="datos">
-        <div><strong>Código Postal:</strong></div><div>91130</div>
-        <div><strong>Tipo de Vialidad:</strong></div><div>CALLE</div>
-        <div><strong>Nombre de Vialidad:</strong></div><div>MONTERREY MACUILTEPETL</div>
-        <div><strong>Número Exterior:</strong></div><div>102</div>
-        <div><strong>Número Interior:</strong></div><div>(vacío)</div>
-        <div><strong>Nombre de la Colonia:</strong></div><div>PROGRESO</div>
-        <div><strong>Nombre de la Localidad:</strong></div><div>XALAPA</div>
-        <div><strong>Nombre del Municipio o Demarcación Territorial:</strong></div><div>XALAPA</div>
-        <div><strong>Entidad Federativa:</strong></div><div>VERACRUZ</div>
-        <div><strong>Entre Calle:</strong></div><div>SIN NOMBRE</div>
-      </div>
+    <div class="domicilio">
+      <h3>Domicilio Fiscal</h3>
+      <p><span class="etiqueta">Código Postal:</span> 91130</p>
+      <p><span class="etiqueta">Colonia:</span> PROGRESO</p>
+      <p><span class="etiqueta">Municipio o Demarcación Territorial:</span> XALAPA</p>
+      <p><span class="etiqueta">Entidad Federativa:</span> XALAPA</p>
+      <p><span class="etiqueta">Calle:</span> MONTERREY MACUILTEPETL #102</p>
+      <p><span class="etiqueta">Entre Calle:</span> SIN NOMBRE</p>
     </div>
 
-    <hr>
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=ROMC060725FN6&size=150x150" alt="Código QR">
+      <p>ID: ROMC060725FN6</p>
+    </div>
 
     <div class="footer">
-      Secretaría de Hacienda y Crédito Público · Servicio de Administración Tributaria<br>
-      Av. Hidalgo 77, Col. Guerrero, C.P. 06300, Ciudad de México<br>
-      MarcaSAT 55 627 22 728 | <a href="https://www.sat.gob.mx" target="_blank">www.sat.gob.mx</a>
+      Página [1] de [2] · Contacto SAT: Av. Hidalgo 77, Col. Guerrero, C.P. 06300, Ciudad de México<br>
+      Tel. desde el interior del país: 55 627 22 728 | www.sat.gob.mx
     </div>
   </div>
 </body>
 </html>
-
-
