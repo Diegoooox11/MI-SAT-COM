@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Constancia de Situación Fiscal - SAT Simulado</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #000;
-    }
-
-    .constancia {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border: 1px solid #ccc;
-    }
-
-    .titulo {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 20px;
-      font-size: 18px;
-    }
-
-    .seccion {
-      margin-bottom: 20px;
-    }
-
-    .seccion h3 {
-      background-color: #eee;
-      padding: 8px;
-      margin-bottom: 10px;
-    }
-
-    .datos {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 10px;
-    }
-
-    .logo-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-bar div {
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 12px;
-      color: #555;
-    }
-
-    hr {
-      margin: 20px 0;
-    }
-
-    .barcode {
-      font-family: monospace;
-      text-align: right;
-    }
-  </style>
+<meta charset="UTF-8" />
+<title>Constancia de Situación Fiscal - SAT</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #999;
+    background: white;
+    color: #000;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #005b96;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  header img {
+    height: 85px;
+    margin-right: 20px;
+  }
+  header h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #005b96;
+    text-transform: uppercase;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #003366;
+  }
+  th, td {
+    border: 1.5px solid #003366;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  th {
+    background-color: #005b96;
+    color: white;
+    font-weight: normal;
+    width: 35%;
+  }
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+  }
+  .bottom-section img {
+    height: 110px;
+  }
+  footer {
+    margin-top: 60px;
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+  }
+  a {
+    color: #005b96;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-  <div class="constancia">
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_SAT_México.svg" alt="Logo SAT" />
+    <h2>Servicio de Administración Tributaria</h2>
+  </header>
 
-    <div class="logo-bar">
-      <div>🟤 HACIENDA</div>
-      <div>🔵 SAT</div>
-    </div>
+  <h1>CONSTANCIA DE SITUACIÓN FISCAL</h1>
 
-    <div class="titulo">CONSTANCIA DE SITUACIÓN FISCAL</div>
+  <table>
+    <tbody>
+      <tr>
+        <th>Nombre o razón social</th>
+        <td>CRISTOPHER ZOE ROJAS MORENO</td>
+      </tr>
+      <tr>
+        <th>RFC</th>
+        <td>ROJC900101XXX</td>
+      </tr>
+      <tr>
+        <th>Tipo de contribuyente</th>
+        <td>Persona Física</td>
+      </tr>
+      <tr>
+        <th>Domicilio fiscal</th>
+        <td>Calle Falsa 123, Ciudad de México, CDMX</td>
+      </tr>
+      <tr>
+        <th>Régimen fiscal</th>
+        <td>Régimen de Incorporación Fiscal</td>
+      </tr>
+      <tr>
+        <th>Fecha de inscripción</th>
+        <td>01/01/2020</td>
+      </tr>
+      <tr>
+        <th>Vigencia</th>
+        <td>Vigente</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <div class="barcode">
-      ROMC060725FN6
-    </div>
-
-    <p><strong>Lugar y Fecha de Emisión:</strong> XALAPA, VERACRUZ A 24 DE DICIEMBRE DE 2024</p>
-
-    <hr>
-
-    <div class="seccion">
-      <h3>Datos de Identificación del Contribuyente:</h3>
-      <div class="datos">
-        <div><strong>RFC:</strong></div><div>ROMC060725FN6</div>
-        <div><strong>CURP:</strong></div><div>ROMC060725HVZJRR2A2</div>
-        <div><strong>Nombre(s):</strong></div><div>CRISTOPHER ZOE</div>
-        <div><strong>Primer Apellido:</strong></div><div>ROJAS</div>
-        <div><strong>Segundo Apellido:</strong></div><div>MORENO</div>
-        <div><strong>Fecha inicio de operaciones:</strong></div><div>21 DE DICIEMBRE DE 2024</div>
-        <div><strong>Estatus en el padrón:</strong></div><div>ACTIVO</div>
-        <div><strong>Fecha de último cambio de estatus:</strong></div><div>21 DE DICIEMBRE DE 2024</div>
-        <div><strong>Nombre Comercial:</strong></div><div>(vacío)</div>
-      </div>
-    </div>
-
-    <div class="seccion">
-      <h3>Datos del domicilio registrado:</h3>
-      <div class="datos">
-        <div><strong>Código Postal:</strong></div><div>91130</div>
-        <div><strong>Tipo de Vialidad:</strong></div><div>CALLE</div>
-        <div><strong>Nombre de Vialidad:</strong></div><div>MONTERREY MACUILTEPETL</div>
-        <div><strong>Número Exterior:</strong></div><div>102</div>
-        <div><strong>Número Interior:</strong></div><div>(vacío)</div>
-        <div><strong>Nombre de la Colonia:</strong></div><div>PROGRESO</div>
-        <div><strong>Nombre de la Localidad:</strong></div><div>XALAPA</div>
-        <div><strong>Nombre del Municipio o Demarcación Territorial:</strong></div><div>XALAPA</div>
-        <div><strong>Entidad Federativa:</strong></div><div>VERACRUZ</div>
-        <div><strong>Entre Calle:</strong></div><div>SIN NOMBRE</div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="footer">
-      Secretaría de Hacienda y Crédito Público · Servicio de Administración Tributaria<br>
-      Av. Hidalgo 77, Col. Guerrero, C.P. 06300, Ciudad de México<br>
-      MarcaSAT 55 627 22 728
-    </div>
+  <div class="bottom-section">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sello_oficial_del_SAT.svg/120px-Sello_oficial_del_SAT.svg.png" alt="Sello Oficial SAT" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Firma.svg" alt="Firma Oficial" />
+    <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fwww.sat.gob.mx&chs=150x150&choe=UTF-8&chld=L|2" alt="Código QR" />
   </div>
+
+  <footer>
+    Documento oficial del Servicio de Administración Tributaria (SAT). <br />
+    Visita: <a href="https://www.sat.gob.mx" target="_blank" rel="noopener noreferrer">www.sat.gob.mx</a>
+  </footer>
 </body>
 </html>
+
